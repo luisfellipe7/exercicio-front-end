@@ -1,4 +1,5 @@
 import React, {useState,useEffect} from 'react'
+import './Card.css'
 
 
 const Card = ({user}) => {
@@ -21,8 +22,10 @@ const Card = ({user}) => {
               <h5 class="card-title">{user.name}</h5>
               <h6 class="card-subtitle mb-2 text-muted">{user.email}</h6>
               <p class="card-text">{user.username}</p>
-              {post == true && <div>{posts.map((p)=>(<div><p><b>{p.title}</b></p>
-              <p>{p.body}</p><hr />
+              {post == true && <div>{posts.map((p)=>(<div>
+                <p class="title-p">{p.title}</p>
+                <p class="body-p">{p.body}</p>
+                <hr />
               </div>))}</div>}
             </div>
           </div>

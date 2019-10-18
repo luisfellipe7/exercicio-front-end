@@ -1,0 +1,20 @@
+.title-p {
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title-p::first-letter, .body-p::first-letter{
+    text-transform: uppercase;
+}
+
+.body-p {
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px; 
+}
